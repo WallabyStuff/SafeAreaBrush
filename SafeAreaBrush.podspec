@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SafeAreaBrush'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SafeAreaBrush.'
+  s.summary          = 'SafeAreaBrush makes you to fill safe areas super easily'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,8 +24,8 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/SunneyG/SafeAreaBrush'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'SunneyG' => 'avocado34.131@gmail.com' }
-  s.source           = { :git => 'https://github.com/SunneyG/SafeAreaBrush.git', :tag => s.version.to_s }
+  s.author           = { 'WallabyStuff' => 'avocado34.131@gmail.com' }
+  s.source           = { :git => 'https://github.com/WallabyStuff/SafeAreaBrush.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
