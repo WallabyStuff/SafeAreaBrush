@@ -26,8 +26,10 @@
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8EDBF40F2862FF1E0036F87F /* SafeAreaPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */; };
+		8EDBF4102862FF1E0036F87F /* SafeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */; };
+		8EDBF4112862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40E2862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift */; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		AF8F7662A2813E50B1008773085002FE /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFCB5C451023EA53256F3F9ACC20B8 /* ReplaceMe.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		BB8D35F201797C1406DB4D2AD50D4EE5 /* Pods-SafeAreaBrush_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE08E0224D1ECA53D534666ED6B1916 /* Pods-SafeAreaBrush_Tests-dummy.m */; };
 		BF5800273CD475472F79A63B52EE7C37 /* Pods-SafeAreaBrush_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDF0B1E61233C26B7BF841432773137 /* Pods-SafeAreaBrush_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,9 +77,9 @@
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		2A25C2990A4A0864D9D156B849F7721E /* SafeAreaBrush-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SafeAreaBrush-Info.plist"; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		37099C330777FF6A8EEFA8B4104CD79F /* SafeAreaBrush */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SafeAreaBrush; path = SafeAreaBrush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37099C330777FF6A8EEFA8B4104CD79F /* SafeAreaBrush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SafeAreaBrush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3719B40DD5412B78840A3803539AD7D9 /* Pods-SafeAreaBrush_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafeAreaBrush_Tests.modulemap"; sourceTree = "<group>"; };
-		3EBF4CC17F4B0D8167069E08D3BD7A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3EBF4CC17F4B0D8167069E08D3BD7A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		3F0F014E5BDB062BD0C58E76B724777C /* Pods-SafeAreaBrush_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SafeAreaBrush_Example-dummy.m"; sourceTree = "<group>"; };
 		44004E0454430670117DA079877D02E5 /* SafeAreaBrush-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SafeAreaBrush-umbrella.h"; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		49C2CAFA0EA495BB66B3BCEE83B4EA78 /* Pods-SafeAreaBrush_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafeAreaBrush_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCC3ED63FB7272124F2A3B6BFF86324 /* Pods-SafeAreaBrush_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SafeAreaBrush_Example-frameworks.sh"; sourceTree = "<group>"; };
 		635ECBC59A3D9E7902C0A2F3ABE9643C /* Pods-SafeAreaBrush_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SafeAreaBrush_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
@@ -95,27 +97,29 @@
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		77E54C0088DD59CD07C2F29B36C44B3A /* Pods-SafeAreaBrush_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafeAreaBrush_Tests-Info.plist"; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		7FA5954744E044ACD85B0FB23FB44B98 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		7FBFCB5C451023EA53256F3F9ACC20B8 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SafeAreaBrush/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		7FA5954744E044ACD85B0FB23FB44B98 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83541E89A148597C814DCB50F5548E57 /* Pods-SafeAreaBrush_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafeAreaBrush_Example-Info.plist"; sourceTree = "<group>"; };
-		835C076205EC674D8D81FC1082FB1452 /* SafeAreaBrush.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SafeAreaBrush.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		835C076205EC674D8D81FC1082FB1452 /* SafeAreaBrush.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SafeAreaBrush.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		86E66DBE47AC25CAA40E649C82550103 /* Pods-SafeAreaBrush_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafeAreaBrush_Example.modulemap"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		939FA82D35BE312EECF1F72776A72344 /* Pods-SafeAreaBrush_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SafeAreaBrush_Tests"; path = Pods_SafeAreaBrush_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeAreaPosition.swift; path = SafeAreaBrush/Classes/SafeAreaPosition.swift; sourceTree = "<group>"; };
+		8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeAreaView.swift; path = SafeAreaBrush/Classes/SafeAreaView.swift; sourceTree = "<group>"; };
+		8EDBF40E2862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+SafeAreaBrush.swift"; path = "SafeAreaBrush/Classes/UIViewController+SafeAreaBrush.swift"; sourceTree = "<group>"; };
+		939FA82D35BE312EECF1F72776A72344 /* Pods_SafeAreaBrush_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeAreaBrush_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		9ADD1C47BD02CA15DAD2920181B81B09 /* SafeAreaBrush.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SafeAreaBrush.modulemap; sourceTree = "<group>"; };
 		9C54810416355E396A02BA1C332CCB02 /* Pods-SafeAreaBrush_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafeAreaBrush_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1B5C82E4B59CF392B25A4BEA3E3F8F6 /* Pods-SafeAreaBrush_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SafeAreaBrush_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B97C2DF4C382FC5BD5245AA0C06167DD /* SafeAreaBrush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SafeAreaBrush.release.xcconfig; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D12E8628441908BEF11CFBF17EBE10B1 /* Pods-SafeAreaBrush_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SafeAreaBrush_Example"; path = Pods_SafeAreaBrush_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12E8628441908BEF11CFBF17EBE10B1 /* Pods_SafeAreaBrush_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeAreaBrush_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		D929B4511EE66C696B9073EF2EB11ABC /* Pods-SafeAreaBrush_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafeAreaBrush_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3053949FA46A71E1CB4843711480D0C /* Pods-SafeAreaBrush_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SafeAreaBrush_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -243,10 +247,10 @@
 		7D393B8C3DA569749966162988B1B8B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
-				D12E8628441908BEF11CFBF17EBE10B1 /* Pods-SafeAreaBrush_Example */,
-				939FA82D35BE312EECF1F72776A72344 /* Pods-SafeAreaBrush_Tests */,
-				37099C330777FF6A8EEFA8B4104CD79F /* SafeAreaBrush */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				D12E8628441908BEF11CFBF17EBE10B1 /* Pods_SafeAreaBrush_Example.framework */,
+				939FA82D35BE312EECF1F72776A72344 /* Pods_SafeAreaBrush_Tests.framework */,
+				37099C330777FF6A8EEFA8B4104CD79F /* SafeAreaBrush.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,14 +316,15 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
 		C9E2297B42FE4748042B71E36EA2A003 /* SafeAreaBrush */ = {
 			isa = PBXGroup;
 			children = (
-				7FBFCB5C451023EA53256F3F9ACC20B8 /* ReplaceMe.swift */,
+				8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */,
+				8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */,
+				8EDBF40E2862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift */,
 				4D6798AE774FEC5948009E66E1128C0D /* Pod */,
 				8D842CB7C9DD1DF542C0BF9F5D5A125B /* Support Files */,
 			);
@@ -419,7 +424,7 @@
 			);
 			name = "Pods-SafeAreaBrush_Example";
 			productName = Pods_SafeAreaBrush_Example;
-			productReference = D12E8628441908BEF11CFBF17EBE10B1 /* Pods-SafeAreaBrush_Example */;
+			productReference = D12E8628441908BEF11CFBF17EBE10B1 /* Pods_SafeAreaBrush_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8F34F89ADEAC6118F1D19756560D2C07 /* SafeAreaBrush */ = {
@@ -437,7 +442,7 @@
 			);
 			name = SafeAreaBrush;
 			productName = SafeAreaBrush;
-			productReference = 37099C330777FF6A8EEFA8B4104CD79F /* SafeAreaBrush */;
+			productReference = 37099C330777FF6A8EEFA8B4104CD79F /* SafeAreaBrush.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9798882A3CF805A46DF87C24930E3F27 /* Pods-SafeAreaBrush_Tests */ = {
@@ -457,7 +462,7 @@
 			);
 			name = "Pods-SafeAreaBrush_Tests";
 			productName = Pods_SafeAreaBrush_Tests;
-			productReference = 939FA82D35BE312EECF1F72776A72344 /* Pods-SafeAreaBrush_Tests */;
+			productReference = 939FA82D35BE312EECF1F72776A72344 /* Pods_SafeAreaBrush_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
@@ -475,7 +480,7 @@
 			);
 			name = FBSnapshotTestCase;
 			productName = FBSnapshotTestCase;
-			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -552,7 +557,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8F7662A2813E50B1008773085002FE /* ReplaceMe.swift in Sources */,
 				E9B774753C830DF12149D1759DCCF8E5 /* SafeAreaBrush-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,9 +576,12 @@
 				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
 				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
 				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
+				8EDBF4102862FF1E0036F87F /* SafeAreaView.swift in Sources */,
 				C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */,
 				2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */,
 				74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */,
+				8EDBF4112862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift in Sources */,
+				8EDBF40F2862FF1E0036F87F /* SafeAreaPosition.swift in Sources */,
 				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
 				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
 				2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */,
@@ -620,7 +627,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SafeAreaBrush_Tests/Pods-SafeAreaBrush_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SafeAreaBrush_Tests/Pods-SafeAreaBrush_Tests.modulemap";
@@ -652,7 +659,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
@@ -683,7 +690,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SafeAreaBrush/SafeAreaBrush-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SafeAreaBrush/SafeAreaBrush-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SafeAreaBrush/SafeAreaBrush.modulemap";
 				PRODUCT_MODULE_NAME = SafeAreaBrush;
@@ -751,7 +758,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -779,7 +786,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SafeAreaBrush/SafeAreaBrush-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SafeAreaBrush/SafeAreaBrush-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SafeAreaBrush/SafeAreaBrush.modulemap";
 				PRODUCT_MODULE_NAME = SafeAreaBrush;
@@ -810,7 +817,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
@@ -840,7 +847,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SafeAreaBrush_Tests/Pods-SafeAreaBrush_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SafeAreaBrush_Tests/Pods-SafeAreaBrush_Tests.modulemap";
@@ -873,7 +880,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SafeAreaBrush_Example/Pods-SafeAreaBrush_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SafeAreaBrush_Example/Pods-SafeAreaBrush_Example.modulemap";
@@ -940,13 +947,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -967,7 +973,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SafeAreaBrush_Example/Pods-SafeAreaBrush_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SafeAreaBrush_Example/Pods-SafeAreaBrush_Example.modulemap";
