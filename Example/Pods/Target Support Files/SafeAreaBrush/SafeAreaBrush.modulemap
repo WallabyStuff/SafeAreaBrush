@@ -1,0 +1,6 @@
+framework module SafeAreaBrush {
+  umbrella header "SafeAreaBrush-umbrella.h"
+
+  export *
+  module * { export * }
+}

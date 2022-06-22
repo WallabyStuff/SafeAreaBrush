@@ -1,0 +1,22 @@
+{
+  "name": "SafeAreaBrush",
+  "version": "0.1.0",
+  "summary": "A short description of SafeAreaBrush.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SunneyG/SafeAreaBrush",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SunneyG": "avocado34.131@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/SunneyG/SafeAreaBrush.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SafeAreaBrush/Classes/**/*"
+}
