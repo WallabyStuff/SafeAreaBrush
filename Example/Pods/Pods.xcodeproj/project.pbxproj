@@ -26,9 +26,14 @@
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8E2B3DDA28650CF1009D3A7A /* SafeAreaPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */; };
+		8E2B3DDB28650CF1009D3A7A /* SafeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */; };
+		8E2B3DEA28657DF9009D3A7A /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B3DE828657DF9009D3A7A /* CALayer+Animation.swift */; };
+		8E2B3DEB28657DF9009D3A7A /* UIViewController+SafeAreaBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B3DE928657DF9009D3A7A /* UIViewController+SafeAreaBrush.swift */; };
+		8E2B3DEC28657E07009D3A7A /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B3DE828657DF9009D3A7A /* CALayer+Animation.swift */; };
+		8E2B3DED28657E07009D3A7A /* UIViewController+SafeAreaBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B3DE928657DF9009D3A7A /* UIViewController+SafeAreaBrush.swift */; };
 		8EDBF40F2862FF1E0036F87F /* SafeAreaPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */; };
 		8EDBF4102862FF1E0036F87F /* SafeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */; };
-		8EDBF4112862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBF40E2862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift */; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		BB8D35F201797C1406DB4D2AD50D4EE5 /* Pods-SafeAreaBrush_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE08E0224D1ECA53D534666ED6B1916 /* Pods-SafeAreaBrush_Tests-dummy.m */; };
@@ -102,10 +107,11 @@
 		835C076205EC674D8D81FC1082FB1452 /* SafeAreaBrush.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SafeAreaBrush.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		86E66DBE47AC25CAA40E649C82550103 /* Pods-SafeAreaBrush_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafeAreaBrush_Example.modulemap"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		8E2B3DE828657DF9009D3A7A /* CALayer+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
+		8E2B3DE928657DF9009D3A7A /* UIViewController+SafeAreaBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SafeAreaBrush.swift"; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeAreaPosition.swift; path = SafeAreaBrush/Classes/SafeAreaPosition.swift; sourceTree = "<group>"; };
 		8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeAreaView.swift; path = SafeAreaBrush/Classes/SafeAreaView.swift; sourceTree = "<group>"; };
-		8EDBF40E2862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+SafeAreaBrush.swift"; path = "SafeAreaBrush/Classes/UIViewController+SafeAreaBrush.swift"; sourceTree = "<group>"; };
 		939FA82D35BE312EECF1F72776A72344 /* Pods_SafeAreaBrush_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeAreaBrush_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
@@ -270,6 +276,16 @@
 			path = "Example/Pods/Target Support Files/SafeAreaBrush";
 			sourceTree = "<group>";
 		};
+		8E2B3DE728657DF9009D3A7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B3DE828657DF9009D3A7A /* CALayer+Animation.swift */,
+				8E2B3DE928657DF9009D3A7A /* UIViewController+SafeAreaBrush.swift */,
+			);
+			name = Utils;
+			path = SafeAreaBrush/Classes/Utils;
+			sourceTree = "<group>";
+		};
 		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +340,7 @@
 			children = (
 				8EDBF40C2862FF1E0036F87F /* SafeAreaPosition.swift */,
 				8EDBF40D2862FF1E0036F87F /* SafeAreaView.swift */,
-				8EDBF40E2862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift */,
+				8E2B3DE728657DF9009D3A7A /* Utils */,
 				4D6798AE774FEC5948009E66E1128C0D /* Pod */,
 				8D842CB7C9DD1DF542C0BF9F5D5A125B /* Support Files */,
 			);
@@ -557,6 +573,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2B3DED28657E07009D3A7A /* UIViewController+SafeAreaBrush.swift in Sources */,
+				8E2B3DDA28650CF1009D3A7A /* SafeAreaPosition.swift in Sources */,
+				8E2B3DDB28650CF1009D3A7A /* SafeAreaView.swift in Sources */,
+				8E2B3DEC28657E07009D3A7A /* CALayer+Animation.swift in Sources */,
 				E9B774753C830DF12149D1759DCCF8E5 /* SafeAreaBrush-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,11 +596,12 @@
 				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
 				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
 				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
+				8E2B3DEB28657DF9009D3A7A /* UIViewController+SafeAreaBrush.swift in Sources */,
 				8EDBF4102862FF1E0036F87F /* SafeAreaView.swift in Sources */,
 				C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */,
 				2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */,
+				8E2B3DEA28657DF9009D3A7A /* CALayer+Animation.swift in Sources */,
 				74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */,
-				8EDBF4112862FF1E0036F87F /* UIViewController+SafeAreaBrush.swift in Sources */,
 				8EDBF40F2862FF1E0036F87F /* SafeAreaPosition.swift in Sources */,
 				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
 				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
