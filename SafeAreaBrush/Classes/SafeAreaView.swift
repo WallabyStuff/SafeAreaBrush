@@ -14,7 +14,6 @@ class SafeAreaView: UIView {
     
     private var position: SafeAreaPosition
     private var parentView: UIView
-    private var oldParentViewSize: CGSize = .zero
     
     private var widthAnchorConstraint = NSLayoutConstraint()
     private var heightAnchorConstraint = NSLayoutConstraint()
@@ -50,14 +49,9 @@ class SafeAreaView: UIView {
     
     
     // MARK: - Constraints
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        let newParentViewSize = parentView.frame.size
-        if oldParentViewSize != newParentViewSize {
-            oldParentViewSize = newParentViewSize
-            
+
+    override var bounds: CGRect {
+        didSet {
             /// Update constraints or frames here
             updateWidthConstraint()
             updateHeightConstraint()
@@ -167,10 +161,8 @@ class SafeAreaView: UIView {
     }
     
     private func configureGradientLayerFrame() {
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
+        CALayer.performWithoutAnimation {
             self.gradientLayer.frame = self.bounds
-            print(self.bounds)
         }
     }
     
@@ -202,7 +194,7 @@ class SafeAreaView: UIView {
     public func configureGradient() {
         let gradientColor = backgroundColor ?? .white
         gradientLayer.colors = [gradientColor.cgColor, gradientColor.withAlphaComponent(0.5).cgColor, UIColor.clear.cgColor]
-        gradientLayer.locations = [0.5, 0.9]
+        gradientLayer.locations = [0.3, 0.7]
         
         switch position {
         case .top:
