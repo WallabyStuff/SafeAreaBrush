@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SafeAreaBrush'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'SafeAreaBrush makes you to fill safe areas super easily'
 
 # This description is used to generate tags and improve search results.
