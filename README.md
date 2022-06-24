@@ -1,15 +1,89 @@
-# SafeAreaBrush
+<p align='center'>
+<img src="https://user-images.githubusercontent.com/63496607/175499153-051c052a-6301-49d1-85ed-3a00ad90e835.png" width='557' title='SafeAreaBrush'/>
+</p>
 
-[![CI Status](https://img.shields.io/travis/SunneyG/SafeAreaBrush.svg?style=flat)](https://travis-ci.org/SunneyG/SafeAreaBrush)
-[![Version](https://img.shields.io/cocoapods/v/SafeAreaBrush.svg?style=flat)](https://cocoapods.org/pods/SafeAreaBrush)
-[![License](https://img.shields.io/cocoapods/l/SafeAreaBrush.svg?style=flat)](https://cocoapods.org/pods/SafeAreaBrush)
-[![Platform](https://img.shields.io/cocoapods/p/SafeAreaBrush.svg?style=flat)](https://cocoapods.org/pods/SafeAreaBrush)
+<p align='center'>
+<a href="https://travis-ci.org/SunneyG/SafeAreaBrush"><img src="https://img.shields.io/travis/SunneyG/SafeAreaBrush.svg?style=flat"></a>
+<a href="https://cocoapods.org/pods/SafeAreaBrush"><img src="https://img.shields.io/cocoapods/v/SafeAreaBrush.svg?style=flat"></a>
+<a href="https://cocoapods.org/pods/SafeAreaBrush"><img src="https://img.shields.io/cocoapods/l/SafeAreaBrush.svg?style=flat"></img></a>
+<a href="https://cocoapods.org/pods/SafeAreaBrush"><img src="https://img.shields.io/cocoapods/p/SafeAreaBrush.svg?style=flat"></img></a>
+</p>
+
+<p align='center'>
+SafeAreaBrush helps you to fill SafeAreas super easily
+</p>
+
+
+<br/>
+
+## Requirements
+
+iOS 11.0+
+
+<br/>
+
+
+## Usage
+
+Call following code on UIViewController to fill SafeAreas
+
+```swift
+import SafeAreaBrush
+
+fillSafeArea(position: .top, color: .red)
+fillSafeArea(position: .left, color: .green)
+fillSafeArea(position: .right, color: .blue)
+fillSafeArea(position: .bottom, color: .cyan)
+```
+
+<br/>
+
+You also can fill SafeAreas with gradient color. like so ⬇️
+
+```swift
+import SafeAreaBrush
+
+fillSafeArea(position: .top, color: .red, gradient: true)
+fillSafeArea(position: .left, color: .green, gradient: true)
+fillSafeArea(position: .right, color: .blue, gradient: true)
+fillSafeArea(position: .bottom, color: .cyan, gradient: true)
+```
+
+<br/>
+
+Even blur effect
+```swift
+import SafeAreaBrush
+
+fillSafeArea(position: .top, blur: .regular)
+fillSafeArea(position: .left, blur: .regular)
+fillSafeArea(position: .right, blur: .regular)
+fillSafeArea(position: .bottom, blur: .regular)
+
+// Gradient on
+fillSafeArea(position: .top, blur: .regular, gradient: true)
+fillSafeArea(position: .left, blur: .regular, gradient: true)
+fillSafeArea(position: .right, blur: .regular, gradient: true)
+fillSafeArea(position: .bottom, blur: .regular, gradient: true)
+```
+
+
+## Resizing
+It will resize frame size when trait colleciton has changed. So don't worry about it.
+<br/>
+<br/>
+<img src="https://user-images.githubusercontent.com/63496607/175510324-3066b3f8-ced6-4a82-ac79-9e9c8ef77646.gif"/>
+
+
+<br/>
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+<br/>
+
 
 ## Installation
 
@@ -19,10 +93,15 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SafeAreaBrush'
 ```
+latest version: 1.0.0
+
+<br/>
 
 ## Author
 
-SunneyG, avocado34.131@gmail.com
+SeunggiLee, avocado34.131@gmail.com
+
+<br/>
 
 ## License
 
