@@ -19,5 +19,9 @@ class ViewController: UIViewController {
         fillSafeArea(position: .right, color: .green)
         fillSafeArea(position: .bottom, color: .blue, gradient: true)
     }
+    
+    @IBAction func didTapRemoveButton(_ sender: Any) {
+        removeSafeArea(position: .top)
+    }
 }
 

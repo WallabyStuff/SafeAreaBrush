@@ -42,9 +42,18 @@ class SafeAreaView: UIView {
     }
     
     private func setupView() {
+        setupSafeAreaView()
+    }
+    
+    private func setupSafeAreaView() {
+        setupSafeAreaViewTag()
         parentView.addSubview(self)
         translatesAutoresizingMaskIntoConstraints = false
         configureSafeAreaViewConstraints()
+    }
+    
+    private func setupSafeAreaViewTag() {
+        self.tag = position.tag
     }
     
     
