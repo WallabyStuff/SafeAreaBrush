@@ -12,4 +12,17 @@ public enum SafeAreaPosition {
     case left
     case right
     case bottom
+    
+    var tag: Int {
+        switch self {
+        case .top:
+            return 101
+        case .left:
+            return 102
+        case .right:
+            return 103
+        case .bottom:
+            return 104
+        }
+    }
 }

@@ -27,4 +27,10 @@ extension UIViewController {
                                         parentView: view)
         safeAreaView.configureBlurEffectView(style: blur, gradient: gradient)
     }
+    
+    public func removeSafeArea(position: SafeAreaPosition) {
+        if let viewWithTag = view.viewWithTag(position.tag) {
+            viewWithTag.removeFromSuperview()
+        }
+    }
 }
