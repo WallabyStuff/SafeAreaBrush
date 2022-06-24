@@ -7,18 +7,17 @@
 //
 
 import UIKit
+import SafeAreaBrush
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        fillSafeArea(position: .top, color: .cyan, gradient: true)
+        fillSafeArea(position: .left, color: .red)
+        fillSafeArea(position: .right, color: .green)
+        fillSafeArea(position: .bottom, color: .blue, gradient: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
