@@ -19,14 +19,19 @@ class SafeAreaView: UIView {
     private var heightAnchorConstraint = NSLayoutConstraint()
     
     private var gradientLayer = CAGradientLayer()
+    private var insertAt: Int
     
     
     // MARK: - LifeCycle
     
-    init(position: SafeAreaPosition, parentView: UIView) {
+    init(position: SafeAreaPosition,
+         parentView: UIView,
+         insertAt: Int = -1) {
         self.position = position
         self.parentView = parentView
+        self.insertAt = insertAt
         super.init(frame: .zero)
+        
         setup()
     }
     
@@ -47,7 +52,13 @@ class SafeAreaView: UIView {
     
     private func setupSafeAreaView() {
         setupSafeAreaViewTag()
-        parentView.addSubview(self)
+        
+        if insertAt == -1 {
+            parentView.addSubview(self)
+        } else {
+            parentView.insertSubview(self, at: insertAt)
+        }
+        
         translatesAutoresizingMaskIntoConstraints = false
         configureSafeAreaViewConstraints()
     }
@@ -58,7 +69,7 @@ class SafeAreaView: UIView {
     
     
     // MARK: - Constraints
-
+    
     override var bounds: CGRect {
         didSet {
             /// Update constraints or frames here

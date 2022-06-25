@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   SafeAreaBrush makes you to fill safe areas super easily
                        DESC
 
-  s.homepage         = 'https://github.com/SunneyG/SafeAreaBrush'
+  s.homepage         = 'https://github.com/WallabyStuff/SafeAreaBrush'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WallabyStuff' => 'avocado34.131@gmail.com' }
