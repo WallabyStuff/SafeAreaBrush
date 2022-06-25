@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SafeAreaBrush'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'iOS SafeArea utility'
   s.swift_version    = '4.0'
 
