@@ -1,6 +1,0 @@
-framework module Pods_SafeAreaBrush_Tests {
-  umbrella header "Pods-SafeAreaBrush_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
