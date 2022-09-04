@@ -189,7 +189,7 @@ class SafeAreaView: UIView {
     
     // MARK: - BlurEffect
     
-    public func configureBlurEffectView(style: UIBlurEffectStyle,
+  public func configureBlurEffectView(style: UIBlurEffect.Style,
                                         gradient: Bool) {
         let blurEffect = UIBlurEffect(style: style)
         let visualEffectView = UIVisualEffectView(effect: blurEffect)

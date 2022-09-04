@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - SafeAreaBrush (0.1.0)
+  - SafeAreaBrush (1.0.3)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - SafeAreaBrush (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   SafeAreaBrush:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SafeAreaBrush: 2c2e2d3bdabd3d1c7927f93980ce4a7db648fe7f
+  SafeAreaBrush: 13ada0b25dcfdde8f110f46b1d34dc017b01b12c
 
-PODFILE CHECKSUM: dd138f5188f3e4c873d772114b3eabd6c5ba36a2
+PODFILE CHECKSUM: 0b62879a0a596a5f6be3052a9205b45de795f7b8
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
