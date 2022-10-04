@@ -69,7 +69,7 @@ fillSafeArea(position: .bottom, blur: .regular, gradient: true)
 
 
 ## Resizing
-It will resize frame size when trait colleciton has changed. So don't worry about it.
+It will resize frame automatically when trait colleciton has changed.
 <br/>
 <br/>
 <img src="https://user-images.githubusercontent.com/63496607/175510324-3066b3f8-ced6-4a82-ac79-9e9c8ef77646.gif"/>
@@ -93,7 +93,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SafeAreaBrush'
 ```
-latest version: 1.0.0
+latest version: 1.0.1
 
 <br/>
 

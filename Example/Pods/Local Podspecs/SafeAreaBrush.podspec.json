@@ -1,22 +1,24 @@
 {
   "name": "SafeAreaBrush",
-  "version": "0.1.0",
-  "summary": "A short description of SafeAreaBrush.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/SunneyG/SafeAreaBrush",
+  "version": "1.0.3",
+  "summary": "iOS SafeArea utility",
+  "swift_versions": "5.0",
+  "description": "SafeAreaBrush makes you to fill safe areas super easily",
+  "homepage": "https://github.com/WallabyStuff/SafeAreaBrush",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "SunneyG": "avocado34.131@gmail.com"
+    "WallabyStuff": "avocado34.131@gmail.com"
   },
   "source": {
-    "git": "https://github.com/SunneyG/SafeAreaBrush.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/WallabyStuff/SafeAreaBrush.git",
+    "tag": "1.0.3"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "source_files": "SafeAreaBrush/Classes/**/*"
+  "source_files": "Sources/Classes/**/*",
+  "swift_version": "5.0"
 }

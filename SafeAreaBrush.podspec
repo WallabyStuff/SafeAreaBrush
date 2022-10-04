@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SafeAreaBrush'
-  s.version          = '1.0.0'
+  s.version          = '1.0.4'
   s.summary          = 'iOS SafeArea utility'
-  s.swift_version    = '4.0'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   SafeAreaBrush makes you to fill safe areas super easily
                        DESC
 
-  s.homepage         = 'https://github.com/SunneyG/SafeAreaBrush'
+  s.homepage         = 'https://github.com/WallabyStuff/SafeAreaBrush'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WallabyStuff' => 'avocado34.131@gmail.com' }
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'SafeAreaBrush/Classes/**/*'
+  s.source_files = 'Sources/Classes/**/*'
   
   # s.resource_bundles = {
   #   'SafeAreaBrush' => ['SafeAreaBrush/Assets/*.png']
