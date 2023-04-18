@@ -10,18 +10,18 @@ import UIKit
 import SafeAreaBrush
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        fillSafeArea(position: .top, color: .cyan, gradient: true)
-        fillSafeArea(position: .left, color: .red)
-        fillSafeArea(position: .right, color: .green)
-        fillSafeArea(position: .bottom, color: .blue, gradient: true)
-    }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    @IBAction func didTapRemoveButton(_ sender: Any) {
-        removeSafeArea(position: .top)
-    }
+    fillSafeArea(position: .top, color: .systemPink, gradient: true)
+    fillSafeArea(position: .left, color: .systemTeal)
+    fillSafeArea(position: .right, color: .systemRed)
+    fillSafeArea(position: .bottom, color: .systemGreen, gradient: true)
+  }
+  
+  @IBAction func didTapRemoveButton(_ sender: Any) {
+    removeSafeArea(position: .top)
+  }
 }
 
